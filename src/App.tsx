@@ -18,6 +18,8 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0f] text-white selection:bg-[#6C5CE7]/30 selection:text-white flex flex-col items-center relative overflow-x-hidden font-sans">
       {/* Ambient Space & Glow Effects */}
       <div className="fixed inset-0 z-0 pointer-events-none">
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 bg-grid-pattern [mask-image:radial-gradient(ellipse_at_top,white_50%,transparent_95%)] opacity-70" />
         {/* Top radial spotlight */}
         <div className="absolute inset-x-0 top-0 h-[600px] bg-[radial-gradient(circle_at_50%_0%,rgba(108,92,231,0.08)_0%,transparent_70%)]" />
       </div>

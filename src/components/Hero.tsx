@@ -31,7 +31,7 @@ export function Hero() {
       // 1. Parallax scrolling for Robot Container (moves down on scroll to create deep 3D depth)
       if (robotContainer) {
         gsap.to(robotContainer, {
-          y: 160,
+          y: 20,
           ease: "none",
           scrollTrigger: {
             trigger: section,
@@ -45,7 +45,7 @@ export function Hero() {
       // 2. Parallax scrolling for Text Copy (moves up on scroll, creating a counter-movement)
       if (textContainer) {
         gsap.to(textContainer, {
-          y: -100,
+          y: -30,
           ease: "none",
           scrollTrigger: {
             trigger: section,
@@ -146,7 +146,7 @@ export function Hero() {
 
             {/* Headline */}
             <h1
-              className="gsap-fade-h1 opacity-0 text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-white mb-6 leading-[1.1] font-display"
+              className="gsap-fade-h1 opacity-0 text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold tracking-tight text-white mb-6 leading-[1.15] font-display"
             >
               Discover How <span className="text-[#6C5CE7] bg-gradient-to-r from-[#a29bfe] to-[#6C5CE7] bg-clip-text text-transparent">435+ People</span> Landed Their First $2K/Month Client In 6 Weeks With AI Freelancing
             </h1>
@@ -204,7 +204,7 @@ export function Hero() {
           {/* Right: The Interactive 3D Robot Spline Scene */}
           <div 
             ref={robotContainerRef}
-            className="lg:col-span-5 relative w-full h-[380px] sm:h-[450px] lg:h-[650px] flex items-center justify-center"
+            className="lg:col-span-5 relative w-full h-[400px] sm:h-[480px] lg:h-[700px] flex items-center justify-center z-10 -translate-y-8 sm:-translate-y-12 lg:-translate-y-24 lg:-mt-12"
           >
             {/* Ambient behind-robot glow */}
             <div className="absolute w-[300px] h-[300px] bg-[#6C5CE7]/10 rounded-full blur-[100px] pointer-events-none" />
